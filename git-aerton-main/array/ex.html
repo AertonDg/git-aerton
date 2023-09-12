@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = []
+        alert("diite 0 para terminar")
+
+        do{
+
+            num = prompt(" digite o nome do produto que deseja adicionar a lista de produtos")
+            if( num == '0' ){
+                let finalizar = confirm("deseja finalizar a lista?")
+                if(finalizar){
+                    break
+                }else{
+                    continue
+            }
+            }
+            document.write(`${num}<br>`)
+        }while(true)
+    </script>
+</body>
+</html>

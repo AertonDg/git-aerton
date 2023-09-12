@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let velocidade, limite, limite120
+        velocidade = Number(prompt(" digite a velocidade "))
+        limite = Number(100);
+        limite120 = Number(120)
+        if(velocidade <= limite ){
+            alert("sem multa")
+        }  
+
+        else if( velocidade <= limite120 & velocidade > limite){
+            alert("multa leve")
+
+        }
+        else if( velocidade > limite120 ){
+            alert("multa grave")
+        }
+    </script>
+</body>
+</html>s

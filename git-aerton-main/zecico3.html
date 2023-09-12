@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> <script>
+    let nota100, nota50, nota10, valor 
+
+    valor = Number(prompt("digite a quantia que deseja sacar(O valor deve terminar com 0): "))
+
+    if(valor % 10 == 0){
+
+    nota100 = parseInt((valor / 100))
+    nota50 = parseInt((valor % 100) / 50   )
+    nota10 = parseInt(((valor % 100 ) % 50) / 10)
+    
+    alert(`notas 100: ` + nota100 + `\n notas de 50: ` + nota50 + `\n notas de 10: ` + nota10)
+    }
+    else{
+        alert(`Só as notas de 10, 50, 100, estão disponiveis.`)
+        location.reload()
+    }
+
+</script>
+
+    
+</body>
+</html>

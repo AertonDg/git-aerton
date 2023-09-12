@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ld1, ld2, ld3, triangulo
+        ld1 = Number(prompt(" digite o tamanho do primeiro lado:"))
+        ld2 = Number(prompt("digite o segundo lado:"))
+        ld3 = Number(prompt("digite o tamanho do terceiro lado:"))
+
+        if((ld1 + ld2) < ld3 || (ld3 + ld1) < ld2 || (ld3 + ld2) < ld1){
+            alert(`Esses valores não podem formar um triângulo.`)
+        }
+
+        else if(ld1 == ld2 & ld3 == ld1 & ld2 == ld3){
+            alert(` Equilátero `)
+        }
+
+        else if(ld1 == ld2 || ld3 == ld1 || ld2 == ld3){
+            alert(` Isósceles `)
+        }
+        
+        else if(ld1 != ld2 & ld3 != ld1 & ld2 != ld3){
+            alert(`Escaleno `)
+        }
+
+      
+    </script>
+</body>
+</html>
+
+O mais lindo EU(aerton)
+EU SOU O MELHOR

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dificil</title>
+</head>
+<body>
+    <script>
+        let trablhador, pecas, sexo, pecaumen = 0, homem = 0, mulher = 0, novSAL = 0, HOMENSmedia= 0, MULHERESmedia = 0
+
+        let classe1 = 0, classe2 = 0, classe3 = 0, salario = 0, salarioaumen = 0, salarioA = 0
+        var hom, mul
+        document.write(" erro de pagamento <br>")
+       
+        for( var i = 0; i <= 15; i++ ){
+
+            trablhador = prompt("qual o trabalhador ")
+        sexo = prompt("qual o sexo?")
+        pecas = Number(prompt(" quantidade de peças produzidas"))
+        if(pecas <= 20){
+
+            classe1 = classe1 + 1
+            salario = 1200
+        }
+
+        else if( pecas >= 21 & pecas <= 30){
+
+            classe2 = classe2 + 1
+            salario = 1200 + (pecas *30)
+        }
+        else if( pecas > 30){
+
+            classe3 = classe3 + 1
+            salario = 1200 + (pecas *50)
+           
+        }
+        if(salario > salarioA){
+            salarioA = salario
+            novSAL = `trabalhador teve o maaior salario de ${salarioA}`
+
+        }
+        if( sexo == "h" || sexo == "H" || sexo == "homem" || sexo == "HOMEM" ){
+            homem = homem + 1
+            HOMENSmedia= HOMENSmedia+ pecas
+        }
+        else if(sexo == "m" || sexo == "M" || sexo == "mulher" || sexo == "MULHER"){
+            mulher = mulher + 1
+            MULHERESmedia = MULHERESmedia + pecas
+        }
+        
+        salarioaumen = salarioaumen + salario
+        pecaumen = pecaumen + pecas
+        document.write(`${trablhador} terá o salario no valor de: ${salario} <br>`)
+         
+        hom = HOMENSmedia/ homem
+        mul = MULHERESmedia/ mulher
+        }
+        document.write(` falha ao pagar o valor total ${salarioaumen} <br> `)
+        document.write(`peças totais: ${pecaumen} <br>`)
+        document.write(`  homens: ${homem} <br> `)
+        document.write(` mulheres: ${mulher} <br> `)
+        document.write(`  homens: ${hom} <br> `)
+        document.write(` mulheres: ${mul} <br> `)
+    </script>
+</body>
+</html>
+aerton esteve aq
